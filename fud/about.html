@@ -33,6 +33,7 @@
 </div>
   </body>
 </html>
+    
 <style>
   body {
     background-color: red;
@@ -43,20 +44,6 @@
       p {
         text-align: center;
       }
-      div {
-        background-color: gold;
-        border: 1px solid white;
-      }
-      .wrapper {
-  border: none;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: 
-    "image header site"
-    "main main main main"
-    grid-auto-rows: 1fr;
-}
        .nav {
 list-style-type: none;
 margin: 0;
@@ -77,4 +64,20 @@ text-decoration: none;
 .bar a: hover {
 background-color: yellow;
 }
+    div {
+  background-color: gold;
+  border: 1px solid white;
+}
+.wrapper {
+  border: none;
+  background-color: red;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+    "image header site"
+    "main main main main"
+    grid-auto-rows: 1fr;
+}
+
 </style>
