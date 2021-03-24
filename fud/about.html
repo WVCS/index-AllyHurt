@@ -6,24 +6,40 @@
 <li class="bar"> <a href="hours.html"> Hours and Locations </a></li>
 <li class="bar"> <a href="about.html"> About </a></li>
 </ul>
-    <h1> Our Origins </h1>
-    <p> My wife and I were simple peasants with nine beautiful daughters; one day, a great snake monster appeared calling itself the Orochi and managed to devour nine of our eight 
+    
+    <div class="wrapper">
+    <div> Our Origins </div>
+      <div class="info"> My wife and I were simple peasants with nine beautiful daughters; one day, a great snake monster appeared calling itself the Orochi and managed to devour nine of our eight 
       daughters. All hope we thought we had lost until who should appear but Susano'o-no-Mikoto, the great storm god! He graciously answered our pleas and in exchange for our last
-      remaining daughter's hand in marriage, he slaid the Orochi for us! Now we serve delicious sushi in the name of Susano'o-no-Mikoto. </p>
+      remaining daughter's hand in marriage, he slaid the Orochi for us! Now we serve delicious sushi in the name of Susano'o-no-Mikoto. </div>
+    </div>
   </body>
 </html>
 
 <style>
   body {
-    background-color: gold;
+    background-color: red;
     {
       h1 {
-        color: red;
         text-align: center;
       }
       p {
         text-align: center;
       }
+      div {
+        background-color: gold;
+        border: 1px solid white;
+      }
+      .wrapper {
+  border: none;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+    "image header site"
+    "main main main main"
+    grid-auto-rows: 1fr;
+}
        .nav {
 list-style-type: none;
 margin: 0;
