@@ -14,7 +14,7 @@
               <center> <a href="store/autofill.html"> Get yer Shellos Here </a>
   <p> I really like Shellos. And Fire Emblem. And Another Eden. And a bunch of other niche nerdy stuff. </p>
      
-  <img 
+  <class="identity" img 
        src="Identity Map .jpg"
        class=center>
   </body>
@@ -22,7 +22,16 @@
   <!--------------------------------------STYLE START---------------------------------------->
   
 <style>
-body {
+ @media only screen and (max-width:1000px) {
+  .container {
+    flex-direction: column;
+  }
+ .identity {
+   max-width: 50%;
+} 
+  }
+  
+  body {
   background-color: black;
   }
   h1 {
