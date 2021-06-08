@@ -33,6 +33,22 @@
         </ol>
      <p class="opinion"> Can you tell that I really like Shellos... </p>
         <button onclick="totop()" id="topbutton"> TO THE TOP! </button>
+        
+        <script>
+          function totop() {
+  document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
+window.onscroll = function() {hideFunction()};
+function hideFunction() {
+  if (document.body.scrollTop > 100 ||
+     document.documentElement.scrollTop > 100)
+    document.getElementById("topbutton").style.display = "block";
+  else {
+    document.getElementById("topbutton").style.display="none";
+  }
+}
+        </script>
      </body>
  </html>
      
